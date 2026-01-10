@@ -2,7 +2,7 @@ services:
   app:
     image: ghcr.io/mind-hochschul-netzwerk/${SERVICENAME}
     restart: unless-stopped
-    container_name: ${SERVICENAME}-alt
+    container_name: ${SERVICENAME}
     volumes:
       - "${VOLUMES_DIR}/images:/var/www/html/images"
     environment:
