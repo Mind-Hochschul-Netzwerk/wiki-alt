@@ -1,6 +1,7 @@
 services:
-  wiki:
+  app:
     volumes:
       - "${VOLUMES_DIR}/images:/var/www/html/images"
-      - "./app/html/loginGateKeeper.php:/var/www/html/loginGateKeeper.php"
       - "./app/html/LocalSettings.php:/var/www/html/LocalSettings.php"
+    labels:
+      - traefik.http.routers.${SERVICENAME}.middlewares=default@file

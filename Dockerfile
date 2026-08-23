@@ -18,7 +18,6 @@ ENV LD_PRELOAD /usr/lib/preloadable_libiconv.so php
 # install packages
 RUN set -ex \
   && apk --no-cache add \
-    php83-ldap \
     php83-zip \
     php83-pdo_mysql \
     php83-iconv \
