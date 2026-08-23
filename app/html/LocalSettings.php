@@ -108,7 +108,7 @@ $wgLanguageCode = "de";
 
 $wgSecretKey = getenv("SECRET_KEY");
 
-$wgServer = "https://wiki." . getenv("DOMAINNAME");
+$wgServer = "https://wiki-alt." . getenv("DOMAINNAME");
 
 ## For attaching licensing metadata to pages, and displaying an
 ## appropriate copyright notice / icon. GNU Free Documentation
